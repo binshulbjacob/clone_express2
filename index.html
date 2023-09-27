@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+          <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+          <title>Bootstrap Example</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+       <title>portfolio</title>
+       <link rel="stylesheet" href="exercise2.css">
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <!---- counter number animation --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"><!--number counting-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!---- counter number animation end--->
+       <!-- fontawesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+
+      <script>
+        AOS.init();
+      </script>
+                                   
+      <!-------------------------------------------------navbar------------------------------------------------------------->
+          <nav class="navbar navbar-expand-lg sticky-top " style="background-color: white;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="https://vultur.drozd.at/wp-content/uploads/2020/05/logo.png" alt="" style="width:75%">
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="input-group mb-3" style="width: 350px;">
+                <input type="text" class="form-control" placeholder="Search cources..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-success" type="button" id="button-addon2">
+                  <img src="image\search (1).svg" alt="">
+                </button>
+              </div>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                
+                  <li class="nav-item dropdown ms-5">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     <strong>Home</strong>   
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="index.html">Home Main</a></li>
+                      <li><a class="dropdown-item" href="#">Training School</a></li>
+                      <li><a class="dropdown-item" href="#">Home Business</a></li>
+                      <li><a class="dropdown-item" href="#">Online Tutor</a></li>
+                      <li><a class="dropdown-item" href="#">Fitness Coach</a></li>
+                      <li><a class="dropdown-item" href="#">Home Education</a></li>
+                      <li><a class="dropdown-item" href="#">Home Personal</a></li>
+                      <li><a class="dropdown-item" href="#">Home Courses</a></li>
+                      <li><a class="dropdown-item" href="#">Home Mentor</a></li>
+                      <li><a class="dropdown-item" href="#">Language School</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown mx-3 ms-5">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong> Pages</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="about.html">About</a></li>
+                      <li><a class="dropdown-item" href="#">About us</a></li>               
+                      <li><a class="dropdown-item" href="#">Start Here 1</a></li>
+                      <li><a class="dropdown-item" href="#">Start Here 2 </a></li>
+                      <li><a class="dropdown-item" href="#">Start Here 3</a></li>                                            
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown mx-3 ms-5">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>  Cources</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="courses.html">Cources Grid</a></li>
+                      <li><a class="dropdown-item" href="#">Cources Style 2 </a></li>   
+                      <li><a class="dropdown-item" href="#">Cources Style 3</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Teacher Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Single Paid Cources</a></li>
+                      <li><a class="dropdown-item" href="#">Single Free Cources</a></li>
+                      <li><a class="dropdown-item" href="#">Become a Teacher</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown mx-3 ms-5">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong> Blog</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Blog Main</a></li>
+                      <li><a class="dropdown-item" href="#">Blog 2 Column</a></li>                      
+                      <li><a class="dropdown-item" href="#">Blog 3 Column</a></li>                      
+                      <li><a class="dropdown-item" href="#">Blog Layout 2</a></li>                      
+                      <li><a class="dropdown-item" href="#">Blog Classic</a></li>                      
+                      <li><a class="dropdown-item" href="#">Blog Detail</a></li>                      
+                    
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown mx-3 ms-5">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>  Shop</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Shop</a></li>
+                      <li><a class="dropdown-item" href="#">Cart</a></li>
+                      <li><a class="dropdown-item" href="#">My account</a></li>
+                      <li><a class="dropdown-item" href="#">Checkout</a></li>                   
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown mx-3 ms-5">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>  Contact </strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Contact</a></li>
+                      <li><a class="dropdown-item" href="#">Contact 2</a></li>                      
+                      <li><a class="dropdown-item" href="#">Contact 3</a></li>
+                      <li><a class="dropdown-item" href="#">Contact 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item mx-3 ">
+                    <a class="mx-3 position-relative" href="#" type="button"  data-toggle="dropdown">
+                      <i class="fa-solid fa-bag-shopping fa-xl" style="color: black;"></i>
+                      <span class="fw-bold position-absolute badge rounded-circle top-100 start-100 translate-middle" style="background-color: #20ad95;">0</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+<!---------------------------------------------------------------image--- write----------------------------------------------------->
+ 
+
+<div class="bg-image p-5"style="background-image: url('https://vultur.drozd.at/wp-content/uploads/2019/11/home-education-1.jpg'); background-size: cover">
+  <div class="mask">
+      <div class="text-white my-5 col-4">
+          <h5 class="pt-5">L I F E B U I L D I N G &ensp;E D U C A T I O N</h5>
+          <h1 class="fw-bold my-3">More Than 25K+ Edu Courses Online</h1>
+          <p>Choose from over 250,000 online video courses with new additions published every month, high quality courses.</p>
+          <div class="row my-4">
+              <div class="col-7">
+                  <button class="btn btn-lg text-white" style="background-color: #20ad99;">Get Started Now <i class="fas fa-arrow-right"></i></button>
+              </div>
+              <div class="col pb-5">
+                <div class="col" >
+                  <button class="btn_ripple " ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                  </svg></button>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+         
+<!-------------------------------------------------------------------------close---------------------------------------------------->
+
+
+
+<!------------------------------------------------------------------Coach Online Courses---------------------------------------------------------------->
+<div class="container my-5 bg-white">
+  <div class="row">
+    <div class="col-6">
+      <img src="https://vultur.drozd.at/wp-content/uploads/2019/11/3d-people-1.png" alt="">
+    </div>
+     <div class="col">
+      <h1 class="fw-bold  " style="color: #403b66;;">Coach Online Courses & LMS Education WordPress Theme</h1>
+      <p class="py-2 text-muted">Get best rated theme for Coach Online Courses & LMS Education WordPress. Start Your Professional WP Coaching Site Now! Let’s Create Something new and awesome Togeather. High Performance WordPress Theme. Let’s Create Something new and awesome Togeather & Best Services.</p>
+       <ul class="list-unstyled">
+      <li class="text-muted"><i class="far fa-arrow-alt-circle-right fa-lg me-3 my-3"style="color: #20ad95;"></i>High Quality Education Vidio</li>
+      <li class="text-muted"><i class="far fa-arrow-alt-circle-right fa-lg me-3 my-3" style="color: #20ad95;"></i> You can learn anything online</li>
+      <li class="text-muted"><i class="far fa-arrow-alt-circle-right fa-lg me-3 my-3" style="color: #20ad95;"></i> We list your options by state</li>
+      </ul>
+      <button class="btn btn text-white" style="background-color: #20ad95;">Start here <i class="fas fa-arrow-right"></i></button>
+                <button class="btn btn-light btn">Learn More</button>
+     </div>
+  </div>
+</div>
+
+ <!-----------------------------------------------------------------close------------------------------------------------------>
+ <!-----------------------------------------------------------------CARDS1-------------href call in csss=fontawsome.css---------------------------------------->
+
+
+ <div class="container-fluid p-5 bg-light">
+  <div class="row mb-4">
+    <h3 class="about" >
+      COURSES</h3>
+      <h1 class="fw-bold" style="color: #403b66;">Explore Popular Courses</h5>
+  </div>
+  <div class="row mb-5">
+      <div class="col-4">
+          <div class="card border-0 border-0 rounded-0">
+            <div class="inner">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2020/01/breadcrumb-shop-400x300.jpg" class="card-img-top rounded-0" alt=""></div>
+              <div class="p-4 card-body">
+                  <h5 class="fw-bold" style="color: #44ad95;">$99.00</h5>
+                  <h4 class="fw-bold" style="color: #403b66;">Visual Basic Web Course With Live Project</h5>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <span class="text-muted">5.0 (1 rating)</span>
+                  <div class="row py-3">
+                      <div class="col">
+                          <i class="far fa-address-book"></i>
+                          <span class="text-muted">8 Lessons</span>
+                      </div>
+                      <div class="col-8">
+                          <i class="far fa-user fa-sm"></i>
+                          <span class="text-muted">96 Students</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-4">
+          <div class="card border-0 rounded-0">
+            <div class="inner">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2019/08/bosss-400x300.jpg" class="card-img-top rounded-0" alt=""></div>
+              <div class="p-4 card-body">
+                  <h5 class="fw-bold" style="color: #44ad95;">$79.00</h5>
+                  <h4 class="fw-bold" style="color: #403b66;">Become the PHP Master faster with Vultur</h5>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa-regular fa-star" style="color: #f2b827"></i>
+                  <span class="text-muted">4.0 (1 rating)</span>
+                  <div class="row py-3">
+                      <div class="col">
+                          <i class="far fa-address-book"></i>
+                          <span class="text-muted">8 Lessons</span>
+                      </div>
+                      <div class="col-8">
+                          <i class="far fa-user fa-sm"></i>
+                          <span class="text-muted">71 Students</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-4">
+          <div class="card border-0 rounded-0">
+            <div class="inner">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2019/10/6-400x300.jpg" class="card-img-top rounded-0" alt=""></div>
+              <div class="p-4 card-body">
+                  <h5 class="fw-bold" style="color: #44ad95;">$89.00</h5>
+                  <h4 class="fw-bold" style="color: #403b66;">The Complete SQL Data Coaching Course</h5>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <span class="text-muted">5.0 (1 rating)</span>
+                  <div class="row py-3">
+                      <div class="col">
+                          <i class="far fa-address-book"></i>
+                          <span class="text-muted">8 Lessons</span>
+                      </div>
+                      <div class="col-8">
+                          <i class="far fa-user fa-sm"></i>
+                          <span class="text-muted">62 Students</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-4">
+          <div class="card border-0 rounded-0">
+            <div class="inner">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2019/07/img-blog-29-1280x640-400x300.jpg" class="card-img-top rounded-0" alt=""></div>
+              <div class="p-4 card-body">
+                  <h5 class="fw-bold" style="color: #44ad95;">$39.00</h5>
+                  <h4 class="fw-bold" style="color: #403b66;">Become the Vue Master faster with Vultur</h5>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <span class="text-muted">5.0 (1 rating)</span>
+                  <div class="row py-3">
+                      <div class="col">
+                          <i class="far fa-address-book"></i>
+                          <span class="text-muted">8 Lessons</span>
+                      </div>
+                      <div class="col-8">
+                          <i class="far fa-user fa-sm"></i>
+                          <span class="text-muted">61 Students</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-4">
+          <div class="card border-0 rounded-0">
+            <div class="inner">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2019/12/slider-400x300.jpg" class="card-img-top rounded-0" alt=""></div>
+              <div class="p-4 card-body">
+                  <h5 class="fw-bold" style="color: #44ad95;">Free</h5>
+                  <h4 class="fw-bold" style="color: #403b66;">Introduction to network coaching course</h5>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <span class="text-muted">5.0 (2 rating)</span>
+                  <div class="row py-3">
+                      <div class="col">
+                          <i class="far fa-address-book"></i>
+                          <span class="text-muted">8 Lessons</span>
+                      </div>
+                      <div class="col-8">
+                          <i class="far fa-user fa-sm"></i>
+                          <span class="text-muted">177 Students</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-4">
+          <div class="card border-0 rounded-0">
+            <div class="inner">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2019/11/main-home-img-6-400x300.jpg" class="card-img-top rounded-0" alt=""></div>
+              <div class="p-4 card-body">
+                  <h5 class="fw-bold" style="color: #44ad95;">$17.99</h5>
+                  <h4 class="fw-bold" style="color: #403b66;">Learn Python Interactive Tutorial Online</h5>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <i class="fa fa-star" style="color: #f2b827"></i>
+                  <span class="text-muted">5.0 (1 rating)</span>
+                  <div class="row py-3">
+                      <div class="col">
+                          <i class="far fa-address-book"></i>
+                          <span class="text-muted">8 Lessons</span>
+                      </div>
+                      <div class="col-8">
+                          <i class="far fa-user fa-sm"></i>
+                          <span class="text-muted">50 Students</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!---------------------------------------------------END------------------------------------------------------------------------------------------->
+       
+<!--card hover starts-->
+<div class="container-fluid">
+  <div align="center">
+   <h3 class="about" >
+     TRENDING</h3>
+     <p class ="h1 about-2">Popular Courses Categories</p>
+     <p class="text-1">__ ____ __</p>
+     <p style="font-size: larger;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium totam <br> rem doloremque laudantium, totam rem aperiam, eaque ipsa natus error sit.</p>
+   </div>
+   <div class="row">
+     <div class="col-md-12 ">
+       <div class="box-container">
+         <div class="box-item  ">
+           <div class="flip-box  ">
+             <div class="flip-box-front text-center " style="background-image: url('img/t1.jpg'); ">
+               <div class="inner color-white">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-telegram flip-box-img" viewBox="0 0 16 16">
+                   <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                 </svg>
+                 <h3 class="flip-box-header text-light">Coding</h3>
+                 
+               </div>
+             </div>
+             <div class="flip-box-back text-center" style="background-image: url('img/t1.jpg');">
+               <div class="inner color-white">
+                 <h3 class="flip-box-header  text-light">685 </h3>
+                 <p class=" text-light">Online Courses</p>
+                 <button class="flip-box-button  text-light">View all</button>
+               </div>
+             </div>
+           </div>
+         </div>
+         &nbsp;  &nbsp; &nbsp; 
+         <div class="box-item">
+           <div class="flip-box">
+             <div class="flip-box-front text-center" style="background-image: url('img/t2.jpg');">
+               <div class="inner color-white">
+                 <img width="50" height="50" src="img/icons8-amazon.svg" alt="amazon"/>
+                                 <h3 class="flip-box-header  text-light">Creative</h3>
+                 
+               </div>
+             </div>
+             <div class="flip-box-back text-center" style="background-image: url('img/t2.jpg');">
+               <div class="inner color-white">
+                 <h3 class="flip-box-header">155 </h3>
+                 <p class=" text-light">Online Courses</p>
+                 <button class="flip-box-button  text-light">View all</button>
+               </div>
+             </div>
+           </div>
+         </div>
+         &nbsp;  &nbsp; &nbsp; 
+         <div class="box-item">
+           <div class="flip-box">
+             <div class="flip-box-front text-center filter-" style="background-image: url('img/t3.jpg');">
+               <div class="inner color-white">
+                 <img width="50" height="50" src="img/icons8-book-30.png" alt="" class="flip-box-img">
+                 <h3 class="flip-box-header  text-light">Business</h3>
+               </div>
+             </div>
+             <div class="flip-box-back text-center" style="background-image: url('img/t3.jpg');">
+               <div class="inner color-white">
+                 <h3 class="flip-box-header  text-light">195 </h3>
+                 <p class=" text-light">Online Courses</p>
+                 <button class="flip-box-button  text-light">View all</button>
+               </div>
+             </div>
+           </div>
+         </div>&nbsp;  &nbsp; &nbsp; 
+         <div class="box-item">
+           <div class="flip-box">
+             <div class="flip-box-front text-center" style="background-image: url('img/t4.jpg');">
+               <div class="inner color-white">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                   <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                 </svg>
+                 <h3 class="flip-box-header  text-light">Technology</h3>
+               </div>
+             </div>
+             <div class="flip-box-back text-center" style="background-image: url('img/t4.jpg');">
+               <div class="inner color-white">
+                 <h3 class="flip-box-header  text-light">89 </h3>
+                 <p class=" text-light">Online Courses</p>
+                 <button class="flip-box-button  text-light">View all</button>
+               </div>
+             </div>
+           </div>
+         </div>
+ 
+       </div>
+ 
+ 
+     </div>
+   
+   </div>
+   <div class="row">
+     <div class="col-lg-12 ">
+       <div class="box-container">
+         <div class="box-item">
+           <div class="flip-box">
+             <div class="flip-box-front text-center" style="background-image: url('img/t5.jpg');">
+               <div class="inner color-white">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                   <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z"/>
+                 </svg>
+                 <h3 class="flip-box-header  text-light">Photography</h3>
+              
+               </div>
+             </div>
+             <div class="flip-box-back text-center" style="background-image: url('img/t5.jpg');">
+               <div class="inner color-white">
+                 <h3 class="flip-box-header  text-light ">83 </h3>
+                 <p class=" text-light">Online Courses</p>
+                 <button class="flip-box-button  text-light">View all</button>
+               </div>
+             </div>
+           </div>
+         </div>
+         &nbsp;   &nbsp; &nbsp; 
+         <div class="box-item">
+           <div class="flip-box">
+             <div class="flip-box-front text-center" style="background-image: url('img/t6.jpg');">
+               <div class="inner color-white">
+                 <img width="50" height="50" src="img/icons8-camera-50.png" alt="" class="flip-box-img">
+ 
+                 <h3 class="flip-box-header  text-light">It & Software</h3>
+                
+                
+               </div>
+             </div>
+             <div class="flip-box-back text-center" style="background-image: url('img/t6.jpg');">
+               <div class="inner color-white">
+                 <h3 class="flip-box-header  text-light">293 </h3>
+                 <p class=" text-light">Online Courses</p>
+                 <button class="flip-box-button  text-light">View all</button>
+               </div>
+             </div>
+           </div>
+         </div>
+         &nbsp;  &nbsp; &nbsp; 
+         <div class="box-item">
+           <div class="flip-box">
+             <div class="flip-box-front text-center filter-" style="background-image: url('img/t7.jpg');">
+               <div class="inner color-white">
+                 <img width="50" height="50" src="img/icons8-amazon.svg" alt="amazon"/>
+ 
+                 <h3 class="flip-box-header  text-light">Create</h3>
+               </div>
+             </div>
+             <div class="flip-box-back text-center" style="background-image: url('img/t7.jpg');">
+               <div class="inner color-white">
+                 <h3 class="flip-box-header  text-light">385 </h3>
+                 <p class=" text-light">Online Courses</p>
+                 <button class="flip-box-button  text-light">View all</button>
+               </div>
+             </div>
+           </div>
+         </div>&nbsp;  &nbsp; &nbsp; 
+         <div class="box-item">
+           <div class="flip-box">
+             <div class="flip-box-front text-center" style="background-image: url('img/t8.jpg');">
+               <div class="inner color-white">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-telegram flip-box-img" viewBox="0 0 16 16">
+                   <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                 </svg>
+                
+                 <h3 class="flip-box-header  text-light">Coading</h3>
+                 
+               </div>
+             </div>
+             <div class="flip-box-back text-center" style="background-image: url('img/t8.jpg');">
+               <div class="inner color-white">
+                 <h3 class="flip-box-header  text-light">685 </h3>
+                 <p class=" text-light">Online Courses</p>
+                 <button class="flip-box-button  text-light">View all</button>
+               </div>
+             </div>
+           </div>
+         </div>
+ 
+       </div>
+ 
+ 
+     </div>
+   
+   </div>
+ 
+   </div>
+   <br><br>
+
+
+
+
+|<!-------------------------------------------------end------------------------------------------------------------------>
+
+
+<div class="bg-image justify-content-center p-5 my-5 d-flex text-light " style="background-image: url(https://vultur.drozd.at/wp-content/uploads/2019/12/demo-cta.jpg); background-size: cover;">
+  <div class="text-white text-center py-5 w-75">
+  <h1 class="fw-bold pt-5 pb-4 ">Start Growing With Community & Experience Endless Possibilities</h1>
+    <h5 class="pb-5"> and get started with a free 1 month trial for your business</h5>
+    <button class="btn btn-lg text-white" style="background-color: #20ad95;">Join the network<i class="fas fa-arrow-right ps-2"></i></button>
+
+  </div>
+</div>
+<!-------------------------------------------------------------------------------------over------------------------------------------------------------>
+ 
+<div class="container py-5 ">
+  <div class="row">
+    <div class="col-6 ">
+  
+      <h5 class="text-muted">LEARN SOMETHING NEW</h5>
+      <h1 class="fw-bold" style="color: #403b66;">Learn from any location in the world with Vultur Edu</h1>
+      <p class="text-muted">Duis consectetur feugiat auctor. Morbi nec enim luctus, feugiat arcu id, ultricies ante. Duis vel massa eleifend, porta est non.</p>
+    </div>
+    <div class="col-6">
+      <div class="row">
+        <div class="col-6">
+      <h1 class="fw-bold counter " style="color: #403b66;">647</h1>
+      <p class="text-dark">P R O G R A M&emsp;A W A R D S</p>
+    </div>
+    <div class="col-6">
+      <h1 class="fw-bold counter" style="color: #403b66;">369</h1>
+      <p class="text-dark">C E R T I F I E D&emsp;T E A C H E R</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <h1 class="fw-bold counter" style="color:#403b66;"> 746 </h1>
+      <p class="text-dark">S T U D E N T &emsp; ENTROLLED</p>
+    </div>
+    <div class="col-6">
+      <h1 class="fw-bold counter" style="color:#403b66;">369</h1>
+      <p class="text-dark"> C O M P L E T E &emsp; C O U R C E </p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--------number_counting_animation------------>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
+<script>
+  jQuery(document).ready(function($){
+    $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
+  });
+</script>
+<!--------END_animation------------>
+<!---------------------------------------------------------over--------------------------------------------------------------------------------------->
+
+<!--------------------------------------------------------Meet Our International Teachers-------------------------------------------------------------------------------------->
+
+
+<div class="container">
+  <h3 class="about  text-center" >
+    COURSES</h3>
+  <p class="fw-bolder text-center " style="font-size: 30px; line-height: 40px; color: #403b66;">Meet Our International Teachers</p>
+  <div id="binshul" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active"> <!---these_three code to create card moving  /if image call carousel_item_ linedown_ img--->
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="inner">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2019/10/team02.jpg" alt="" class="card-img-top"></div>
+              <nav class="mt-1 m-3">
+                <ul class="pagination justify-content mt-2 ">
+                  <li class="page-item " style="height: 50%;  "><a class="page-link" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              
+                  <li class="page-item"><a class="page-link" href="#" ><i class="fa-brands fa-twitter"></i></a></li>
+                  <li class="page-item "><a class="page-link" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li class="page-item  "><a class="page-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-square-share-nodes"></i></a></li>
+              
+                </ul>
+              </nav>
+              <div class="card-body">
+                <h4 class="card-title ">loan Drod</h4>
+                 <h6 class="card-title" style="color: #20ad95;">Photoshop</h6>
+                <p class="card-text">sed up perspiciatis unde omnis iste ut perspiciatis unde omnis iste</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="inner">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2019/10/team04.jpg" alt="" class="card-img-top"></div>
+              <nav class="mt-1 m-3">
+                <ul class="pagination justify-content mt-2 ">
+                  <li class="page-item " style="height: 50%;  "><a class="page-link" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              
+                  <li class="page-item"><a class="page-link" href="#" ><i class="fa-brands fa-twitter"></i></a></li>
+                  <li class="page-item "><a class="page-link" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li class="page-item  "><a class="page-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-square-share-nodes"></i></a></li>
+              
+                </ul>
+              </nav>
+              <div class="card-body">
+                <h5 class="card-title">loan Drozd</h5>
+               <h6 class="card-title" style="color: #20ad95;">IT & SoftWare</h6>
+
+               <p class="card-text">sed up perspiciatis unde omnis iste ut perspiciatis unde omnis iste.</p>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="inner">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2019/10/team07.jpg" alt="" class="card-img-top"></div>
+              <nav class="mt-1 m-3">
+                <ul class="pagination justify-content mt-2 ">
+                  <li class="page-item " style="height: 50%;  "><a class="page-link" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              
+                  <li class="page-item"><a class="page-link" href="#" ><i class="fa-brands fa-twitter"></i></a></li>
+                  <li class="page-item "><a class="page-link" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li class="page-item  "><a class="page-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-square-share-nodes"></i></a></li>
+              
+                </ul>
+              </nav>
+              <div class="card-body">
+                <h5 class="card-title">loan Drozd</h5>
+                <h6 class="card-title" style="color: #20ad95;">Education</h6>
+      
+                <p class="card-text">sed up perspiciatis unde omnis iste ut perspiciatis unde omnis iste.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="inner">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2019/10/team03.jpg" alt="" class="card-img-top"></div>
+              <nav class="mt-1 m-3">
+                <ul class="pagination justify-content mt-2 ">
+                  <li class="page-item " style="height: 50%;  "><a class="page-link" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              
+                  <li class="page-item"><a class="page-link" href="#" ><i class="fa-brands fa-twitter"></i></a></li>
+                  <li class="page-item "><a class="page-link" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li class="page-item  "><a class="page-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-square-share-nodes"></i></a></li>
+              
+                </ul>
+              </nav>
+              <div class="card-body">
+                <h5 class="card-title">loan Drozd</h5>
+              <h6 class="card-title" style="color: #20ad95;">Coaching</h6>
+
+                <p class="card-text">sed up perspiciatis unde omnis iste ut perspiciatis unde omnis iste</p>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>             <!---after carousel item call next page button after carousel inner -->
+
+
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="inner">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2019/10/team02.jpg" alt="" class="card-img-top"></div>
+              <nav class="mt-1 m-3">
+                <ul class="pagination justify-content mt-2 ">
+                  <li class="page-item " style="height: 50%;  "><a class="page-link" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              
+                  <li class="page-item"><a class="page-link" href="#" ><i class="fa-brands fa-twitter"></i></a></li>
+                  <li class="page-item "><a class="page-link" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li class="page-item  "><a class="page-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-square-share-nodes"></i></a></li>
+              
+                </ul>
+              </nav>
+              <div class="card-body">
+                <h5 class="card-title">loan Drozd</h5>
+                <h6 class="card-title" style="color: #20ad95;">Coaching</h6>
+      
+                <p class="card-text">sed up perspiciatis unde omnis iste ut perspiciatis unde omnis iste</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="inner">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2019/10/team04.jpg" alt="" class="card-img-top"></div>
+              <nav class="mt-1 m-3">
+                <ul class="pagination justify-content mt-2 ">
+                  <li class="page-item " style="height: 50%;  "><a class="page-link" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              
+                  <li class="page-item"><a class="page-link" href="#" ><i class="fa-brands fa-twitter"></i></a></li>
+                  <li class="page-item "><a class="page-link" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li class="page-item  "><a class="page-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-square-share-nodes"></i></a></li>
+              
+                </ul>
+              </nav>
+              <div class="card-body">
+                <h5 class="card-title">loan Drozd</h5>
+                <h6 class="card-title" style="color: #20ad95;">Education</h6>
+      
+                <p class="card-text">sed up perspiciatis unde omnis iste ut perspiciatis unde omnis iste.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="inner">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2019/10/team07.jpg" alt="" class="card-img-top"></div>
+              <nav class="mt-1 m-3">
+                <ul class="pagination justify-content mt-2 ">
+                  <li class="page-item " style="height: 50%;  "><a class="page-link" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              
+                  <li class="page-item"><a class="page-link" href="#" ><i class="fa-brands fa-twitter"></i></a></li>
+                  <li class="page-item "><a class="page-link" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li class="page-item  "><a class="page-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-square-share-nodes"></i></a></li>
+              
+                </ul>
+              </nav>
+              <div class="card-body">
+                <h5 class="card-title">loan Drozd</h5>
+                 <h6 class="card-title" style="color: #20ad95;">IT & SoftWare</h6>
+
+                <p class="card-text">sed up perspiciatis unde omnis iste ut perspiciatis unde omnis iste.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="inner">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2019/10/team03.jpg" alt="" class="card-img-top"></div>
+              <nav class="mt-1 m-3">
+                <ul class="pagination justify-content mt-2 ">
+                  <li class="page-item " style="height: 50%;  "><a class="page-link" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              
+                  <li class="page-item"><a class="page-link" href="#" ><i class="fa-brands fa-twitter"></i></a></li>
+                  <li class="page-item "><a class="page-link" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li class="page-item  "><a class="page-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-square-share-nodes"></i></a></li>
+              
+                </ul>
+              </nav>
+              <div class="card-body">
+                <h4 class="card-title ">loan Drod</h4>
+               <h6 class="card-title" style="color: #20ad95;">Photoshop</h6>
+
+               <p class="card-text">sed up perspiciatis unde omnis iste ut perspiciatis unde omnis iste</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#binshul" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#binshul" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+   </div>
+</div>
+<!--------------------------------------------------------------------------------end---------------------------------------------------------------->
+
+<!---------------------------------------------------------------img inside corousel---0000-------------------------------------------------------------------------------->
+
+
+<div class="container-fluid text-white" style="
+          background-image: url('https://vultur.drozd.at/wp-content/uploads/2020/02/demo.jpg');
+          background-size: cover;height: 645px;
+          ">
+
+        <div class="row" style="padding: 150px 150px 100px">
+            <div id="carouselComment" class="carousel slide col-6" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselComment" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselComment" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselComment" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-12 bg-dark" style="height: auto;padding: 50px 50px 100px">
+                            <img src="https://vultur.drozd.at/wp-content/uploads/2019/11/become-a-teacher-300x300.jpg"
+                                class="rounded-circle mb-4" height="80px">
+                            <p>"<span class="fw-semibold">I always thought</span> that people used to pay much for
+                                quality. But
+                                these guys
+                                changed my opinion. The
+                                quality exceeds the price many times."</p>
+                            <div class="fw-semibold">Ellison Johnson</div>
+                            <div class="text-secondary">Assistant Professor</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-12 bg-dark" style="height: auto;padding: 50px 50px 100px">
+                            <img src="https://vultur.drozd.at/wp-content/uploads/2019/11/slider3-300x300.jpg"
+                                class="rounded-circle mb-4" height="80px">
+                            <p>"<span class="fw-semibold">I always thought</span> that people used to pay much for
+                                quality. But
+                                these guys
+                                changed my opinion. The
+                                quality exceeds the price many times."</p>
+                            <div class="fw-semibold">Ellison Johnson</div>
+                            <div class="text-secondary">Assistant Professor</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-12 bg-dark" style="height: auto;padding: 50px 50px 100px">
+                            <img src="https://vultur.drozd.at/wp-content/uploads/2019/11/become-a-teacher-300x300.jpg"
+                                class="rounded-circle mb-4" height="80px">
+                            <p>"<span class="fw-semibold">I always thought</span> that people used to pay much for
+                                quality. But
+                                these guys
+                                changed my opinion. The
+                                quality exceeds the price many times."</p>
+                            <div class="fw-semibold">Ellison Johnson</div>
+                            <div class="text-secondary">Assistant Professor</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselComment"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselComment"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+<!----------------------------------------------------------------end -------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------- Explore Recent News--------animation_added_css_inner----------------------------------------------------------------------->
+
+
+<div class="container mt-5">
+  <h3 class="about  text-center" >
+    NEWS</h3>
+<p class="text-center fw-bolder" style="font-size: 30px; line-height: 35px;color: #403b66;">Explore Recent News</p>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+<div class="inner">
+<img src="https://vultur.drozd.at/wp-content/uploads/2019/11/2-4-580x460.jpg" alt="" class="card-img-top">
+</div>
+<div class="card-body">
+  <div class="d-flex justify-content-center">
+    <div class="me-5">
+      <img src="image\calender.svg" alt="" style="width: 20%;">
+      may 5</div>
+    <div class="me-5">
+      <img src="image\user.svg" alt="" style="width: 20%;">
+      
+      Drozd</div>
+    <div class="me-5"> 
+      <img src="image\message-circle.svg" alt="" style="width: 20%;">
+      
+      17078</div>
+  </div><br>
+  <h5 class="fw-bold" style="font-size:150%;color: #403b66;">We provide exclusive git <br> coaching courses</h5>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+  <div class="card">
+    <div class="inner">
+<img src="https://vultur.drozd.at/wp-content/uploads/2019/11/1-4-580x460.jpg" alt="" class="card-img-top">
+</div>
+<div class="card-body">
+  <div class="d-flex justify-content-center">
+    <div class="me-5">
+      <img src="image\calender.svg" alt="" style="width: 20%;">
+      may 5</div>
+    <div class="me-5">
+      <img src="image\user.svg" alt="" style="width: 20%;">
+      
+      Drozd</div>
+    <div class="me-5"> 
+      <img src="image\message-circle.svg" alt="" style="width: 20%;">
+      
+      17078</div>
+  </div><br>
+<h5 class="fw-bold"style="font-size:150%; color: #403b66;" >We provide exclusive git  <br>coaching courses</h5>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+  <div class="card">
+    <div class="inner">
+<img src="https://vultur.drozd.at/wp-content/uploads/2019/11/3-4-580x460.jpg" alt="" class="card-img-top">
+</div>
+<div class="card-body">
+  <div class="d-flex justify-content-center">
+    <div class="me-5">
+      <img src="image\calender.svg" alt="" style="width: 20%;">
+      may 5</div>
+    <div class="me-5">
+      <img src="image\user.svg" alt="" style="width: 20%;">
+      
+      Drozd</div>
+    <div class="me-5"> 
+      <img src="image\message-circle.svg" alt="" style="width: 20%;">
+      
+      17078</div>
+  </div><br>
+<h5 class="fw-bold" style="font-size:150%; color: #403b66;" > We provide exclusive git <br> coaching courses</h5>
+</div>
+</div>
+</div>
+</div>
+</div><br><br>
+<!----------------------------------------------------------------end -------------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------EMAIL-------------------------------------------------------------------------------->
+<div class="bg-image bg-light text-center" style="background-image: url(https://vultur.drozd.at/wp-content/uploads/2020/05/newsletter-shape.png); background-size: cover;">
+  <br><h1 class="fw-bold " style="color: #403b66;;">Sign Up For Our Newsletter</h1>
+  <h5 class="fw-light text-dark">He found himself transformed in his bed into a horrible vermin.</h5>
+  
+  <form class="w-50 py-5 mx-auto" role="">
+    <div class="input-group py-3">
+        <input type="search" class="form-control form-control-lg border-0" style="box-shadow: none;" placeholder="Your email address">
+        <button class="px-4 border-0 btn text-white" style="background-color: #20ad95;">Sign up</button>
+    </div>
+  </form>
+  
+  </div>
+<!----------------------------------------------------------------end -------------------------------------------------------------------------------->
+<footer class="container-fluid bg-dark py-4">
+  <div class="row px-2">
+      <div class="col-md-3 text-white text-md-left mt-2">
+          <a href="#" class="navbar-brand text-white h5">
+              <img src="https://vultur.drozd.at/wp-content/uploads/2020/05/logo-footer.png">
+          </a>
+          <p class="text-white">We build powerful and easy to use WordPress Themes, sell high quality coaching courses online.</p>
+          <i class="fa-brands fa-square-facebook fa-xl me-3"></i>
+          <i class="fa-brands fa-pinterest-p fa-xl me-3"></i>
+          <i class="fa-brands fa-instagram fa-xl me-3"></i>
+          <i class="fa-brands fa-linkedin-in fa-xl me-3"></i>
+          <i class="fa-brands fa-youtube fa-xl me-3"></i>
+       </div>
+      <div class="col-md-3 text-white text-md-left mt-2">
+          <h5 class="fw-bold mb-3">Explore Courses</h1>
+          <ul class="list-unstyled text-white text-decoration-none">
+              <li><a href="#" class="text-white text-decoration-none">Become a Teacher</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Home Coaching</a></li>
+              <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Language School</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Let’s work together</a></li>
+          </ul>
+      </div>
+      <div class="col-md-3 text-md-left text-white mt-2">
+          <h5 class="fw-bold mb-3">Company Links</h5>
+          <ul class="list-unstyled text-white text-decoration-none">
+              <li><a href="#" class="text-white text-decoration-none">Booking Form</a></li>
+              <li><a href="#" class="text-white text-decoration-none">My account</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Services Detail</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Home Education</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Blog 3 Column</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Courses Style 2</a></li>
+          </ul>
+      </div>
+      <div class="col-md-3">
+          <h5 class="fw-bold mb-3 text-white py-2">Contact us</h5>
+          <table>
+              <tr>
+                  <td><i class="fas fa-map-marker-alt mx-3" style="color: #20ad95;"></i></td>
+               <td><p class="text-white mb-0">Address: 123 Main Street, New York, NY 10001</p></td>
+              </tr>
+              <tr>
+                  <td><i class="far fa-envelope-open  mx-3" style="color: #20ad95;"></i></td>
+                  <td><p class="text-white mb-0">Email: info@vultur.com</p></td>
+              </tr>
+              <tr>
+                  <td><i class="fas fa-phone  mx-3" style="color: #20ad95;"></i></td>
+                  <td><p class="text-white mb-0">Phone: +1 (800) 123-4567</p></td>
+              </tr>
+          </table>
+      </div>
+  </div>
+</footer>
+<footer class="container-fluid bg-dark text-white">
+  <div class="row">
+      <div class="col-9">
+          <p>Copyright © 2020 Vultur Designed by ThemeIoan. All Rights Reserved</p>
+      </div>
+      <div class="col">
+          <p>News</p>
+      </div>
+      <div class="col">
+          <p>Careers</p>
+      </div>
+      <div class="col">
+          <p>Services</p>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+</body>
+        </html>

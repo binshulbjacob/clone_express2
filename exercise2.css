@@ -1,0 +1,261 @@
+.inner{
+   overflow: hidden; 
+}
+.inner img{
+    transition: all 1.9 ease;
+}
+
+.inner:hover img {
+    transform: scale(1.8);
+}
+
+
+/* .zoom in and out above ;
+} */
+
+
+/*card 3d                       */
+  
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px 15px;
+    width: 100%;
+    color: #16161677;
+    
+  }
+  
+  @media screen and (min-width:1200px) {
+    .box-container {
+      flex-direction: row
+    }
+  }
+  .tt {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 165, 124);
+  }
+  
+  .box-item {
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    width: 300px;
+    margin-bottom: 35px;
+    max-width: 90%;
+    border-radius: 0%;
+  }
+  .card1 {
+    height:30rem;
+    width:32;
+  }
+  .btn5 {
+    left:29rem;
+    top:18rem;
+    
+  }
+  .btn6 {
+    left:31rem;
+    top:18rem;
+    
+  }
+  
+  .flip-box {
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+  }
+  
+  .flip-box-front,
+  .flip-box-back {
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    min-height: 300px;
+    -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    -webkit-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  /* .transbox {
+  
+    background-color: #000000;
+    opacity: 30;
+  } */
+  
+  .darken-image {
+    position: relative;
+    display: inline-block;
+  }
+  .darken-image img {
+    display: block;
+  }
+  .darken-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  }
+  
+  .flip-box-front {
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-front {
+    -ms-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  .bgcar{
+    background-image: url(img/carousal.jpg);
+    height: 90vh;
+  }
+  .num1{
+    font-weight: 700;
+    font-size: 45px;
+    color: #00344d;
+    /* margin-top: -60px; */
+  }
+  .num{
+    font-weight: 1000;
+    font-size: 55px;
+    color: #00344d;
+    /* margin-top: -60px; */
+  }
+  .flip-box-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-back {
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .blackcar{
+    background-color:rgba(25, 31, 35, 0.98);
+    /* height: 70vh; */
+  }
+  
+  .flip-box .inner {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 60px;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+    
+    transform: translateY(-50%) translateZ(60px) scale(.94);
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+    -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+    top: 50%;
+  }
+  
+  .flip-box-header {
+    font-size: 34px;
+  }
+  
+  .flip-box p {
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+  
+  .flip-box-img {
+    margin-top: 25px;
+  }
+  .trendbutton{
+    background-color: rgb(80, 229, 157);
+    color: white;
+    transition: 0.5s;
+  }
+  .trendbutton:hover{
+    background-color: white;
+    color: black;
+  }
+  
+  .flip-box-button {
+    background-color: #20ad95;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    border: 0;
+    
+  }
+/* card end */
+
+.about{
+    font-weight: 900;
+    font-size: 110px;
+    color: white;
+    text-shadow: 
+    1px 0px 0px rgba(197, 197, 197, 0.398),   /* Right shadow */
+    -1px 0px 0px rgba(163, 163, 163, 0.398),  /* Left shadow */
+    0px 1px 0px rgba(163, 163, 163, 0.398),   /* Bottom shadow */
+    0px -1px 0px rgba(170, 170, 170, 0.398);  /* Top shadow */
+    opacity: 0.;
+    margin-left: -30px;
+  }
+
+/* button animate cirle in carousel*/
+
+.btn_ripple { 
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  display: block; 
+  background-color: #ffffff; 
+  color: #403b66; 
+  display: grid; 
+  place-items: center; 
+  font-size: 16px; 
+  cursor: pointer; 
+  border: 2px solid #fff; 
+  animation-name: ripple; 
+  animation-duration: 1.5s; 
+  animation-iteration-count: infinite; 
+} 
+ 
+@keyframes ripple { 
+  0% { 
+      box-shadow: 0 0 0 0 #fff4, 0 0 0 0 #fff4; 
+  } 
+ 
+  80% { 
+      box-shadow: 0 0 0 20px #fff0, 0 0 0 40px #fff0; 
+  } 
+ 
+  100% { 
+      box-shadow: 0 0 0 0 #fff0, 0 0 0 0 #fff0; 
+  } 
+}
